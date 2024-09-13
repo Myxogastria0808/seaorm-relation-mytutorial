@@ -65,4 +65,6 @@ https://www.sea-ql.org/SeaORM/docs/relation/one-to-many/
 
 https://www.sea-ql.org/SeaORM/docs/relation/many-to-many/
 
+https://www.sea-ql.org/SeaORM/docs/basic-crud/select/
+
 https://zenn.dev/icy_mountain/scraps/dd0ff88411efdb

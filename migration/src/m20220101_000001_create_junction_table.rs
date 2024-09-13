@@ -20,7 +20,6 @@ impl MigrationTrait for Migration {
                             .auto_increment()
                             .primary_key(),
                     )
-                    .col(ColumnDef::new(Junction::Value).string().not_null())
                     .col(ColumnDef::new(Junction::SampleEId).integer().not_null())
                     .foreign_key(
                         ForeignKey::create()
@@ -51,5 +50,4 @@ pub enum Junction {
     Id,
     SampleEId,
     SampleFId,
-    Value,
 }

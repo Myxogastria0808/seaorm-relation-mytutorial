@@ -17,12 +17,12 @@ pub enum Relation {
     Junction,
 }
 
-impl Related<super::junction::Entity> for Entity {
+impl Related<super::sample_e::Entity> for Entity {
     fn to() -> RelationDef {
-        Relation::Junction.def()
+        junction::Relation::SampleE.def()
     }
     fn via() -> Option<RelationDef> {
-        Some(junction::Relation::SampleE.def().rev())
+        Some(junction::Relation::SampleF.def().rev())
     }
 }
 
